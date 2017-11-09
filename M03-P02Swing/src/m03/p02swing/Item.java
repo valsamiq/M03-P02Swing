@@ -10,20 +10,22 @@ package m03.p02swing;
  * @author balsamiq
  */
 public class Item {
-    private Integer Code;
-    private String Color;
-    private String Size;
-    private String Desc;
-    private Double pve;
-    private Double pvp;
+    private Integer Code;   //Item Code
+    private String Color;   //Item Color   
+    private String Size;    //Item Size
+    private String Desc;    //Item Description
+    private Double pve;     //Item cost-price
+    private Double pvp;     //Item sell-price
+    private Integer qty;    //Item Stock quantity
 
-    public Item(Integer Code, String Color, String Size, String Desc, Double pve, Double pvp) {
+    public Item(Integer Code, String Color, String Size, String Desc, Double pve, Double pvp, Integer qty) {
         this.Code = Code;
         this.Color = Color;
         this.Size = Size;
         this.Desc = Desc;
         this.pve = pve;
         this.pvp = pvp;
+        this.qty = qty;
     }
 
     public Integer getCode() {
@@ -72,6 +74,14 @@ public class Item {
 
     public void setPvp(Double pvp) {
         this.pvp = pvp;
+    }
+
+    public Integer getQty() {
+        return qty;
+    }
+
+    public void setQty(Integer qty) {
+        this.qty = qty;
     }
     
 }

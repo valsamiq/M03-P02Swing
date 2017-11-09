@@ -20,3 +20,8 @@ public class M03P02Swing {
         frame0.setVisible(true);
     }
 }
+ //Doubts:
+/*  *Mostrar de codigo a GUI.
+    *porque no detecta que repito code?
+    *
+    */
